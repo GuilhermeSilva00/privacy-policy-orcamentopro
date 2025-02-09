@@ -78,6 +78,7 @@
 
     <script>
         document.addEventListener("message", function(event) {
+            console.log(event);
             const theme = event.data;
             document.body.className = theme;
             document.querySelector(".container").className = "container " + theme;
@@ -85,6 +86,7 @@
         });
 
         window.addEventListener("message", function(event) {
+            console.log(event);
             const theme = event.data;
             document.body.className = theme;
             document.querySelector(".container").className = "container " + theme;
